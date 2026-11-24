@@ -1,6 +1,6 @@
 // Gallery items. Image values are file names in content/images; replace the sample pictures with real photos. An item without an image shows its caption only.
 export default [
-  { title: 'Morning loaves', title_2nd: 'সকালের রুটি', caption: 'Sourdough cooling on the rack.', caption_2nd: 'র‍্যাকে ঠান্ডা হচ্ছে সাওয়ারডো।', image: 'gallery-1.jpg' },
-  { title: 'Wedding cake', title_2nd: 'বিয়ের কেক', caption: 'Three tiers with fresh flowers.', caption_2nd: 'তাজা ফুলে সাজানো তিন স্তরের কেক।', image: 'gallery-2.jpg' },
-  { title: 'The counter', title_2nd: 'কাউন্টার', caption: 'Pastries and coffee, ready at 7 am.', caption_2nd: 'সকাল ৭টায় প্রস্তুত পেস্ট্রি আর কফি।', image: 'gallery-3.jpg' },
+  { title: 'Golden dinner rolls', title_2nd: 'সোনালি ডিনার রোল', caption: 'Soft rolls fresh from the baking tray.', caption_2nd: 'বেকিং ট্রে থেকে সদ্য নামানো নরম রোল।', image: 'gallery-1.jpg' },
+  { title: 'Bread basket', title_2nd: 'রুটির ঝুড়ি', caption: 'A basket of assorted breads and pastries.', caption_2nd: 'নানা ধরনের রুটি আর পেস্ট্রিতে ভরা ঝুড়ি।', image: 'gallery-2.jpg' },
+  { title: 'Croissants and tarts', title_2nd: 'ক্রোয়াসাঁ ও টার্ট', caption: 'Flaky croissants beside berry pastries.', caption_2nd: 'বেরি পেস্ট্রির পাশে ফ্লেকি ক্রোয়াসাঁ।', image: 'gallery-3.jpg' },
 ]
