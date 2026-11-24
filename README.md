@@ -6,9 +6,9 @@ produces plain files in `./out` that any static host can serve. English plus an 
 ## Quick start (Docker, no local Node needed)
 ```sh
 cp .env.example .env                                   # first time only, change the placeholders
-docker compose up -d --build node                      # dev server with live reload: http://127.0.0.1:28310
+docker compose up -d --build node                      # dev server with live reload: http://127.0.0.1:28320
 docker compose run --rm --no-deps build                # validate data, optimise images, static export into ./out
-docker compose --profile preview up -d --build nginx   # nginx on ./out: http://127.0.0.1:28390
+docker compose --profile preview up -d --build nginx   # nginx on ./out: http://127.0.0.1:28392
 docker compose --profile build --profile preview --profile e2e down --remove-orphans   # stop everything
 ```
 

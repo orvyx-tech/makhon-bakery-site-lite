@@ -61,19 +61,16 @@ const Hero: SectionView = ({ section, locale, messages }) => {
 
   return (
   <section id={section.key} aria-labelledby="hero-title" className="relative isolate overflow-hidden bg-night text-white">
-    {/* Banner (or a gradient when none is uploaded) under a dark scrim, so the text and buttons are readable on any image. */}
-    {section.image ? (
-      <Img image={section.image} priority sizes="100vw" className="absolute inset-0 -z-20 size-full object-cover" />
-    ) : (
-      <div aria-hidden="true" className="absolute inset-0 -z-20 bg-gradient-to-br from-brand-800 via-brand-900 to-night" />
-    )}
-    <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-night/90 via-night/70 to-night/40 rtl:bg-gradient-to-l" />
-    <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-1/3 bg-gradient-to-t from-night/60 to-transparent" />
-    {!section.image && (
-      <>
-        <div aria-hidden="true" className="pointer-events-none absolute -top-24 -end-24 -z-10 size-[26rem] rounded-full bg-brand-500/30 blur-3xl" />
-        <div aria-hidden="true" className="pointer-events-none absolute -bottom-32 -start-24 -z-10 size-[22rem] rounded-full bg-accent-400/20 blur-3xl" />
-      </>
+    {/* Gradient banner; the picture (if any) blends into its right side (the left in right-to-left languages). */}
+    <div aria-hidden="true" className="absolute inset-0 -z-30 bg-gradient-to-br from-brand-800 via-brand-900 to-night" />
+    <div aria-hidden="true" className="pointer-events-none absolute -top-24 -start-24 -z-20 size-[26rem] rounded-full bg-brand-500/25 blur-3xl" />
+    {section.image && (
+      <div
+        aria-hidden="true"
+        className="absolute inset-y-0 end-0 -z-20 w-full opacity-35 [mask-image:linear-gradient(to_right,transparent,#000_70%)] md:w-[62%] md:opacity-100 md:[mask-image:linear-gradient(to_right,transparent,#000_55%)] rtl:[mask-image:linear-gradient(to_left,transparent,#000_70%)] md:rtl:[mask-image:linear-gradient(to_left,transparent,#000_55%)]"
+      >
+        <Img image={section.image} priority sizes="(min-width: 768px) 62vw, 100vw" className="size-full object-cover object-right" />
+      </div>
     )}
     <div className="mx-auto w-[92%] max-w-7xl py-20 sm:py-28 lg:py-36">
       <div className="max-w-2xl space-y-6 text-center md:text-start">
