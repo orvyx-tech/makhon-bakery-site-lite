@@ -1,11 +1,11 @@
 # Upgrade to the full edition
 
 Move a client when they need to edit content without a developer, take forms or bookings, run a blog, or have staff accounts.
-The full edition is `gd-business-site-boilerplate` (API, admin, database, portal). The lite starter was cut from it, so the data
+The full edition is `gd-business-site-boilerplate` (API, admin, database, portal). This site was cut from it, so the data
 shapes match.
 
 ## What carries over
-- Theme tokens and the portal components (copied from the template, see SYNC.md).
+- Theme tokens and the portal components.
 - Content shape: `settings`, `sections`, `services`, `faqs`, `testimonials`, `team`, `gallery` with the same fields. The `x` / `x_2nd`
   pairs are the two-language fields the full edition stores as translations.
 - Section keys, `SECTION_PAGES` paths, locale routing (default at root, second under `/<code>/`) and the SEO rules.
@@ -21,7 +21,7 @@ shapes match.
 | Any static host | Containers: portal, API, PHP, database, Redis |
 
 ## Steps
-1. Start the template (`gd-business-site-boilerplate`) for the client and create the admin account.
+1. Start the full edition (`gd-business-site-boilerplate`) for the client and create the admin account.
 2. In the admin, enter settings, sections, services, FAQs, testimonials, team and gallery from the `src/data` files, field for field; upload the images.
 3. Set the same `LOCALE_DEFAULT` and `LOCALE_SUPPORTED`, and copy any custom theme tokens (`src/styles/portal.css`) and components you changed.
 4. Compare the pages side by side (same URLs), then switch DNS. Keep the old static site for a week as a fallback.

@@ -1,7 +1,6 @@
-# gd-business-site-lite-starter
+# makhon-bakery-site-lite
 
-Lite business site starter: one Next.js site at the repo root, no backend, no database. Cloned from
-gd-business-site-boilerplate (see docs/SYNC.md).
+Lite business site for Makhon Bakery: one Next.js site at the repo root, no backend, no database.
 
 ## Stack
 - Node 24 (patched tag), Next.js 16 App Router, static export only (`output: export`, no server, no middleware), React 19, Tailwind 4, TypeScript, pnpm (single package, no workspace)
@@ -15,7 +14,7 @@ gd-business-site-boilerplate (see docs/SYNC.md).
 - `public/`, `e2e/`, `docker/` (node dev script, nginx preview), `scripts/`, `docs/`
 
 ## Docker and env
-- Containers: `gd-business-site-lite-starter-<tech>` (node, build, nginx), via COMPOSE_PROJECT_NAME
+- Containers: `makhon-bakery-site-lite-<tech>` (node, build, nginx), via COMPOSE_PROJECT_NAME
 - Root `.env` (from `.env.example`) holds Docker and shared settings only; no app secrets in it beyond placeholders
 - Ports, env-configured: LITE_DEV_PORT=28310 (Next dev), LITE_PREVIEW_PORT=28390 (nginx preview of ./out); both bound to 127.0.0.1
 
@@ -27,8 +26,7 @@ gd-business-site-boilerplate (see docs/SYNC.md).
 2) No repo-wide exploring, no unrelated refactors, no dependency not listed in docs/VERSIONS.md.
 3) Token saving: use quiet flags and `| tail -n 20`; never paste logs back; no screenshots unless the phase says so.
 4) Run targeted checks while working; run every README check once at the end of a phase.
-5) Sync with the template only by copying theme tokens and shared components (docs/SYNC.md).
-6) Finish: tick the phase in docs/PHASES.md, commit, reply in 8 lines or fewer (done, deviations, decisions needed),
+5) Finish: tick the phase in docs/PHASES.md, commit, reply in 8 lines or fewer (done, deviations, decisions needed),
    then STOP and wait for approval.
 
 ## Branches
