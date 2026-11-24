@@ -1,8 +1,8 @@
 // Business settings. `x_2nd` is the second-language text; leave it out (or empty) to show the default text.
 // Images are file names in content/images (processed by scripts/images.js); null shows none.
 export default {
-  site_name: 'Riverside Bakery',
-  site_name_2nd: 'রিভারসাইড বেকারি',
+  site_name: 'Makhon Bakery',
+  site_name_2nd: 'মাখন বেকারি',
   tagline: 'Fresh bread, cakes and coffee, baked daily',
   tagline_2nd: 'প্রতিদিন তাজা রুটি, কেক আর কফি',
   logo: null,
@@ -20,15 +20,15 @@ export default {
   address_2nd: '২৪ রিভার রোড\nগ্রিনফিল্ড ১২০৭',
   phone: '+880 1700 000000',
   whatsapp: '8801700000000',
-  email: 'hello@riversidebakery.example',
+  email: 'hello@makhonbakery.example',
   social_links: {
-    facebook: 'https://www.facebook.com/riversidebakery.example',
-    instagram: 'https://www.instagram.com/riversidebakery.example',
+    facebook: 'https://www.facebook.com/makhonbakery.example',
+    instagram: 'https://www.instagram.com/makhonbakery.example',
   },
   map_url: 'https://www.google.com/maps/search/?api=1&query=24+River+Road+Greenfield',
   seo: {
-    title: 'Riverside Bakery | Fresh bread and cakes in Greenfield',
-    title_2nd: 'রিভারসাইড বেকারি | গ্রিনফিল্ডে তাজা রুটি ও কেক',
+    title: 'Makhon Bakery | Fresh bread and cakes in Greenfield',
+    title_2nd: 'মাখন বেকারি | গ্রিনফিল্ডে তাজা রুটি ও কেক',
     description: 'A family bakery in Greenfield. Fresh bread every morning, custom cakes, catering and coffee.',
     description_2nd: 'গ্রিনফিল্ডের একটি পারিবারিক বেকারি। প্রতিদিন সকালে তাজা রুটি, অর্ডারে কেক, ক্যাটারিং আর কফি।',
     og_image: 'og-default.jpg',
