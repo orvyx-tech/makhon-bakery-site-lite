@@ -5,13 +5,14 @@ export function DefaultMark({ className = 'size-9' }: { className?: string }) {
     <svg viewBox="0 0 64 64" aria-hidden="true" className={className}>
       <defs>
         <linearGradient id="mark-g" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#34d399" />
-          <stop offset="1" stopColor="#047857" />
+          <stop offset="0" stopColor="#d98f3a" />
+          <stop offset="1" stopColor="#5a2f13" />
         </linearGradient>
       </defs>
       <rect width="64" height="64" rx="16" fill="url(#mark-g)" />
-      <path d="M20 44V20h14a8 8 0 0 1 0 16H28" fill="none" stroke="#fff" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
-      <circle cx="46" cy="46" r="5" fill="#fbbf24" />
+      <path d="M12 44c-1-11 8-20 20-20s21 9 20 20z" fill="#fdf6ec" />
+      <path d="M24 29l-4 9M33 27l-4 11M42 29l-4 9" fill="none" stroke="#b8691f" strokeWidth="3.2" strokeLinecap="round" />
+      <circle cx="48" cy="17" r="5" fill="#ec6f8c" />
     </svg>
   )
 }

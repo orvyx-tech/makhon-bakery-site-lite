@@ -26,7 +26,7 @@ jobs:
     env:
       LOCALE_DEFAULT: ${{ vars.LOCALE_DEFAULT || 'en' }}
       LOCALE_SUPPORTED: ${{ vars.LOCALE_SUPPORTED || 'en,bn' }}
-      SITE_URL: ${{ vars.SITE_URL || 'http://127.0.0.1:28390' }}
+      SITE_URL: ${{ vars.SITE_URL || 'http://127.0.0.1:28392' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

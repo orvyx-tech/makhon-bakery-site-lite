@@ -13,7 +13,7 @@ jobs:
     env:
       LOCALE_DEFAULT: en
       LOCALE_SUPPORTED: en,bn
-      SITE_URL: http://127.0.0.1:28390
+      SITE_URL: http://127.0.0.1:28392
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -36,4 +36,4 @@ jobs:
           pnpm exec playwright install --with-deps chromium
           cp .env.example .env
           docker compose --profile preview up -d --build --wait nginx
-          E2E_PORTAL_ORIGIN=http://127.0.0.1:28390 pnpm exec playwright test
+          E2E_PORTAL_ORIGIN=http://127.0.0.1:28392 pnpm exec playwright test

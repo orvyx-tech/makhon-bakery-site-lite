@@ -16,7 +16,7 @@ Lite business site for Makhon Bakery: one Next.js site at the repo root, no back
 ## Docker and env
 - Containers: `makhon-bakery-site-lite-<tech>` (node, build, nginx), via COMPOSE_PROJECT_NAME
 - Root `.env` (from `.env.example`) holds Docker and shared settings only; no app secrets in it beyond placeholders
-- Ports, env-configured: LITE_DEV_PORT=28310 (Next dev), LITE_PREVIEW_PORT=28390 (nginx preview of ./out); both bound to 127.0.0.1
+- Ports, env-configured: LITE_DEV_PORT=28320 (Next dev), LITE_PREVIEW_PORT=28392 (nginx preview of ./out); both bound to 127.0.0.1
 
 ## Commands (docker compose, no Makefile; see README)
 - Dev server: `docker compose up -d --build node`; build: `docker compose run --rm --no-deps build`; preview: `docker compose --profile preview up -d --build nginx`; e2e and Lighthouse via the `e2e` profile (preview up); other checks listed in README
